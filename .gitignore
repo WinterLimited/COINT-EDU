@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+manufacturing-dashboard/node_modules
+manufacturing-dashboard/.pnp
+manufacturing-dashboard/.pnp.js
+
+# testing
+manufacturing-dashboard/coverage
+
+# production
+manufacturing-dashboard/build
+
+# misc
+manufacturing-dashboard/.DS_Store
+manufacturing-dashboard/.env.local
+manufacturing-dashboard/.env.development.local
+manufacturing-dashboard/.env.test.local
+manufacturing-dashboard/.env.production.local
+
+manufacturing-dashboard/npm-debug.log*
+manufacturing-dashboard/yarn-debug.log*
+manufacturing-dashboard/yarn-error.log*
