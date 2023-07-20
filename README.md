@@ -34,8 +34,8 @@
 
 프론트엔드는 React 및 TypeScript를 기반으로 구성되어 있습니다. 라우팅을 통해 사용자 인증이 미진행 시 LoginPage로 리다이렉트하며, 메인 구성요소로는 ResponsiveDrawer, Sidebar, AppB, 그리고 SampleTable 등이 있습니다.
 
-- **ResponsiveDrawer**: 이는 SideBar 및 AppBar(NavBar)를 포함하며, 각 사이드바 항목은 useState를 통해 배열로 관리됩니다. 이렇게 함으로써 추후에 Redux나 서버를 통해 프로젝트 혹은 사용자 단위에서 메뉴 항목들을 동적으로 변경할 수 있습니다.
-  - **AppBar**
+- **ResponsiveDrawer**: SideBar 및 AppBar(NavBar)를 포함하며, 각 사이드바 항목은 useState를 통해 배열로 관리됩니다. 추후에 Redux나 서버를 통해 프로젝트 혹은 사용자 단위에서 메뉴 항목들을 동적으로 변경 및 AppBar에 정렬 할 수 있습니다.
+  - **SideBar**
   - **AppBar**
 - **SampleTable**: Material-UI 기반 테이블로, 페이지네이션 및 체크박스, 정렬 기능을 제공합니다. id_num으로 고정적인 정렬 및 체크 기능을 제공하며, 이를 통해 DB 구조의 통일성을 제공하고 유지보수를 용이하게 합니다. 
   - **Index.tsx**: 테이블을 구성하는 메인 컴포넌트입니다.
