@@ -33,6 +33,10 @@ export default function SampleTable() {
         isSelected,
         emptyRows,
         visibleRows,
+        editingIds,      // 수정중인 row의 id
+        setEditingIds,
+        enterEditMode,  // 행을 편집 모드로 만드는 함수
+        leaveEditMode,  // 행을 편집 모드에서 나오게 하는 함수
     } = useTable({
         initialOrderBy: 'id_num',
         initialOrder: 'asc',
@@ -42,7 +46,9 @@ export default function SampleTable() {
     return (
         <Box sx={{width: '100%'}}>
             <Paper sx={{width: '100%', mb: 2}}>
-                <EnhancedTableToolbar numSelected={selected.length} tableName={tableName}/>
+                <EnhancedTableToolbar numSelected={selected.length} tableName={tableName}
+                                      editingIds={editingIds} selected={selected} enterEditMode={enterEditMode}
+                                      leaveEditMode={leaveEditMode}/>
                 <TableContainer>
                     <Table
                         sx={{minWidth: 750}}
