@@ -30,11 +30,11 @@
 - **Docker/Kubernetes**: 컨테이너화된 애플리케이션의 배포 및 관리를 도와주는 툴입니다.
 - **CI/CD**: 지속적인 통합과 지속적인 배포를 위한 도구들이 있습니다. Jenkins, Travis CI, GitHub Actions 등이 있습니다.
 
-## 프론트엔드 구조
+# 프론트엔드 구조
 
-# React, TypeScript & Redux Toolkit 테이블 컴포넌트
+## React, TypeScript & Redux Toolkit 테이블 컴포넌트
 
-## 기능
+### 기능
 
 - **범용성**
 DB의 구조와 동일하게 `Data` interface와 초기값을 작성
@@ -44,11 +44,11 @@ API 요청 URL과 테이블 이름을 수정하여 동작
 DB 구조에 따라 boolean type이나 img같은 특정값에 대응하는 표현 방식과
 추가, 수정, 삭제 등의 기능을 자유롭게 처리할 수 있음
 
-## 계획
+### 계획
 
 - TODO → node.js, sequelize, postgreSQL을 사용하여 node.js에서도 테이블 구조와 테이블 이름만 수정하여 범용적으로 사용 가능한 테이블 프레임워크 제작 예정
 
-## 사용 방법
+### 사용 방법
 
 1. 원하는 데이터베이스 구조에 맞게 `Data` 인터페이스를 수정
 2. API 요청 URL과 테이블 이름을 필요에 맞게 수정
