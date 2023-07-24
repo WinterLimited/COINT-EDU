@@ -35,7 +35,7 @@
 - TypeScript
 - Redux Toolkit
 
-## Table Component
+## Reusable Table Component
 ### 기능
 
 - **범용성**
