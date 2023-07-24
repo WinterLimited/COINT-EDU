@@ -31,8 +31,9 @@
 - **CI/CD**: 지속적인 통합과 지속적인 배포를 위한 도구들이 있습니다. Jenkins, Travis CI, GitHub Actions 등이 있습니다.
 
 # 프론트엔드 구조
-
-## React, TypeScript & Redux Toolkit
+- React
+- TypeScript
+- Redux Toolkit
 
 ## Table Component
 ### 기능
