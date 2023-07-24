@@ -15,6 +15,7 @@ const useTable = ({initialOrderBy, initialOrder, initialRowsPerPage}: UseTablePr
     const [page, setPage] = useState(0);
     const [dense, setDense] = useState(false);
     const [rowsPerPage, setRowsPerPage] = useState(initialRowsPerPage);
+    const [editingIds, setEditingIds] = useState<number[]>([]);    // 현재 수정중인 테이블 id_num의 정보를 담는 배열
 
     const handleRequestSort = (
         event: React.MouseEvent<unknown>,
@@ -35,8 +36,7 @@ const useTable = ({initialOrderBy, initialOrder, initialRowsPerPage}: UseTablePr
     };
 
     // Check를 제어하는 함수
-    // string형의 고유 name을 기준으로 처리함
-    // TODO: id_num을 기준으로 처리하도록 수정
+    // id_num을 인자로 받아서 selected 배열에 id_num이 없으면 추가, 있으면 제거
     const handleClick = (event: React.MouseEvent<unknown>, id_num: number) => {
         const selectedIndex = selected.indexOf(id_num);
         let newSelected: readonly number[] = [];
@@ -55,6 +55,16 @@ const useTable = ({initialOrderBy, initialOrder, initialRowsPerPage}: UseTablePr
         }
 
         setSelected(newSelected);
+    };
+
+    // 행을 편집 모드로 전환하는 함수
+    const enterEditMode = (id: number) => {
+        setEditingIds(prev => [...prev, id]);
+    };
+
+    // 행을 편집 모드에서 나오게 하는 함수
+    const leaveEditMode = (id: number) => {
+        setEditingIds(prev => prev.filter(eId => eId !== id));
     };
 
     const handleChangePage = (event: unknown, newPage: number) => {
@@ -101,6 +111,10 @@ const useTable = ({initialOrderBy, initialOrder, initialRowsPerPage}: UseTablePr
         isSelected,
         emptyRows,
         visibleRows,
+        editingIds,
+        setEditingIds,
+        enterEditMode,
+        leaveEditMode,
     };
 };
 
