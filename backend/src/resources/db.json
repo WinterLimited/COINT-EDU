@@ -1,11 +1,11 @@
 {
   "development": {
-    "username": "admin",
-    "password": "coint",
-    "database": "EDU_Sample",
-    "host": "112.160.112.78",
-    "port": 10000,
-    "dialect": "mssql"
+    "username": "postgres",
+    "password": "zhdlsxm4602!",
+    "database": "COINT-EDU",
+    "host": "localhost",
+    "port": 50000,
+    "dialect": "postgres"
   },
   "production": {
     "username": "admin",

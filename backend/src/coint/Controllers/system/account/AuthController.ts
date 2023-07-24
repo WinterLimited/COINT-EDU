@@ -21,7 +21,7 @@ passport.use(new passportlocal.Strategy({
     } else {
 
       if (bcryptjs.compareSync(password, user.loginPw)) {
-        done(null, user, { message: "auth in success" });
+        done(null, user, { message: "login in success" });
       } else {
         done("failed to authorize");
       }

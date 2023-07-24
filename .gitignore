@@ -12,6 +12,7 @@ manufacturing-dashboard/coverage
 
 # production
 manufacturing-dashboard/build
+backend/dist
 
 # misc
 manufacturing-dashboard/.DS_Store
