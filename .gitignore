@@ -4,6 +4,8 @@
 manufacturing-dashboard/node_modules
 manufacturing-dashboard/.pnp
 manufacturing-dashboard/.pnp.js
+manufacturing-backend/node_modules
+backend/node_modules
 
 # testing
 manufacturing-dashboard/coverage

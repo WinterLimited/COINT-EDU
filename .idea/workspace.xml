@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f143e45-01c4-4517-9919-9bd600ab4ac1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/manufacturing-backend/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manufacturing-backend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manufacturing-backend/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manufacturing-backend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SpTzckewhosQ17G74M504NYHWq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/happygod/Documents/myapp/COINT/COINT-sample/COINT-EDU&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/happygod/Documents/myapp/COINT/COINT-sample/COINT-EDU/manufacturing-dashboard/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/manufacturing-dashboard/src/components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f143e45-01c4-4517-9919-9bd600ab4ac1" name="Changes" comment="" />
+      <created>1689842785802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689842785802</updated>
+      <workItem from="1689842787187" duration="33266000" />
+      <workItem from="1690176022805" duration="3430000" />
+      <workItem from="1690189695835" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/backend/src/coint/common/errors/base.js" />
+        <option value="$PROJECT_DIR$/backend/src/coint/common/errors/index.js" />
+        <option value="$PROJECT_DIR$/backend/src/coint/common/errors/http400.js" />
+        <option value="$PROJECT_DIR$/backend/src/coint/common/errors/http401.js" />
+        <option value="$PROJECT_DIR$/backend/src/coint/common/errors/http403.js" />
+        <option value="$PROJECT_DIR$/backend/src/coint/common/errors/http404.js" />
+        <option value="$PROJECT_DIR$/backend/src/coint/common/RestResponse.js" />
+        <option value="$PROJECT_DIR$/backend/src/coint/Controllers/system/account/index.js" />
+        <option value="$PROJECT_DIR$/backend/node_modules/tsc-watch/example/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
