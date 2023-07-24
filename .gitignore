@@ -21,3 +21,5 @@ manufacturing-dashboard/.env.production.local
 manufacturing-dashboard/npm-debug.log*
 manufacturing-dashboard/yarn-debug.log*
 manufacturing-dashboard/yarn-error.log*
+
+backend/node_modules/
