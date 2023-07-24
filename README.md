@@ -32,8 +32,9 @@
 
 # 프론트엔드 구조
 
-## React, TypeScript & Redux Toolkit 테이블 컴포넌트
+## React, TypeScript & Redux Toolkit
 
+## Table Component
 ### 기능
 
 - **범용성**
