@@ -23,7 +23,7 @@ export default function (sequelize: Sequelize, dataTypes: any) {
       },
       grdName: {
         field: "grdName",
-        type: DataTypes.BIGINT,
+        type: DataTypes.STRING(100),
         allowNull: true,
       },
 

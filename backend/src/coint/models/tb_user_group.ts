@@ -9,10 +9,10 @@ export default function (sequelize: Sequelize, dataTypes: any) {
         },
         descr: { field: "descr", type: DataTypes.STRING(255), allowNull: true },
         regUserId: { field: "regUserId", type: DataTypes.BIGINT, allowNull: true },
-        regDtm: { field: "regDtm", type: DataTypes.DATE, allowNull: true },
+        regDtm: { field: "regDtm", type: DataTypes.DATE, allowNull: true, defaultValue: Sequelize.fn('NOW') },
         modUserId: { field: "modUserId", type: DataTypes.STRING(10), allowNull: true },
-        modDtm: { field: "modDtm", type: DataTypes.DATE, allowNull: true },
-        delYn: { field: "delYn", type: DataTypes.STRING(1), allowNull: true },
+        modDtm: { field: "modDtm", type: DataTypes.DATE, allowNull: true, defaultValue: Sequelize.fn('NOW') },
+        delYn: { field: "delYn", type: DataTypes.STRING(1), allowNull: true, defaultValue: 'N' },
     }, {
         tableName: "tb_user_group",
         underscored: true,

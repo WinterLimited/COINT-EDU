@@ -7,6 +7,7 @@ import bcryptjs from "bcryptjs";
 import validator from "validator";
 import assert from "assert";
 import moment from "moment";
+const schema = process.env.COINT_SCHEMA
 
 export default [
   {
@@ -37,11 +38,11 @@ export default [
           x.delYn,
           reguser.userName as regUserName,
           moduser.userName as modUserName,
-          (select userGroupName from tb_user_group where id = x.userGroupId) userGroupName
-          from tb_menu x
-          LEFT OUTER JOIN tb_user reguser
+          (select userGroupName from ${schema}.tb_user_group where id = x.userGroupId) userGroupName
+          from ${schema}.tb_menu x
+          LEFT OUTER JOIN ${schema}.tb_user reguser
           ON reguser.id = x.regUserId
-          LEFT OUTER JOIN tb_user moduser
+          LEFT OUTER JOIN ${schema}.tb_user moduser
           ON moduser.id = x.modUserId
           where x.delYn ='N'
           
@@ -86,7 +87,7 @@ export default [
           `
           select
             menuName
-          from tb_menu x
+          from ${schema}.tb_menu x
           where x.delYn ='N'
           and x.parentId is null
           order by x.id

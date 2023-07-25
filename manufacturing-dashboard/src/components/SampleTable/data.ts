@@ -15,6 +15,8 @@ interface Data {
     phone: string;
     regDate: string;
     lastLoginDate: string;
+    modDate: string;
+    delyn: boolean;
 }
 
 interface HeadCell {

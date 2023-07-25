@@ -6,6 +6,7 @@ import { Op, QueryTypes, Sequelize } from "sequelize";
 import validator from "validator";
 import assert from "assert";
 // import { CODE } from "../../../models/tb_code";
+const schema = process.env.COINT_SCHEMA
 
 
 function convertDataType(value: string, type: string) {
@@ -199,7 +200,7 @@ export default [
                     ],
                     attributes: {
 
-                        include: [[Sequelize.literal(`CASE WHEN [${tblname}].parentId is null THEN [${tblname}].id ELSE [${tblname}].parentId END`), 'orderId']],
+                        include: [[Sequelize.literal(`CASE WHEN [${schema}.${tblname}].parentId is null THEN [${schema}.${tblname}].id ELSE [${schema}.${tblname}].parentId END`), 'orderId']],
                     }
                     ,
                     where: {

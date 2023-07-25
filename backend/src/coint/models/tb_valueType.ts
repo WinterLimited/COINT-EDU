@@ -18,7 +18,7 @@ export default function (sequelize: Sequelize, dataTypes: any) {
       },
       valueTypeName: {
         field: "valueTypeName",
-        type: DataTypes.STRING(100),
+        type: DataTypes.STRING(50),
         allowNull: true,
       },
 

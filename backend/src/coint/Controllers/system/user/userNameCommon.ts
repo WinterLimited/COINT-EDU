@@ -1,17 +1,12 @@
-import { Request, Response, NextFunction } from "express";
+import { Request, Response } from "express";
 import models from "../../../models";
 import { RestResponse } from "../../../common/RestResponse";
-import { HTTP400Error } from "../../../common/errors";
 import { QueryTypes } from 'sequelize';
-import multer from 'multer'
-import path from 'path'
-import fs, { ReadStream } from 'fs'
-import { commonHandlers } from "../../../common/middleware";
-import cors from 'cors';
-import { RequestError } from "request-promise/errors";
+const schema = process.env.COINT_SCHEMA
+
 
 export default [
-  {// Select
+  {
     path: "/api/v1/user/userName",
     method: "get",
     handler: [
@@ -20,16 +15,16 @@ export default [
         SELECT
           id,
           userName
-        from tb_user
-        where delYn = 'N'
-        ORDER BY id asc
+        FROM ${schema}.tb_user
+        WHERE delYn = 'N'
+        ORDER BY id ASC
         `,
-          {
-            type: QueryTypes.SELECT,
-            replacements: {
-              ...req.query
-            }
-          },
+            {
+              type: QueryTypes.SELECT,
+              replacements: {
+                ...req.query
+              }
+            },
         )
         RestResponse.Ok(res, data)
       }

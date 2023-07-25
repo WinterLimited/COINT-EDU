@@ -5,6 +5,7 @@ import { HTTP400Error } from "../../../common/errors";
 import { QueryTypes } from "sequelize";
 import validator from "validator";
 import assert from "assert";
+const schema = process.env.COINT_SCHEMA
 
 export default [
   {
@@ -28,7 +29,7 @@ export default [
       async (req: Request, res: Response) => {
         const data: [] = await models.sequelize.query(
           `
-          SELECT id as code ,menuname as name from tb_menu where parentId is null and delYn = :delYn order by [menuOrder] asc
+          SELECT id as code ,menuname as name from ${schema}.tb_menu where parentId is null and delYn = :delYn order by menuOrder asc
           `,
           {
             replacements: { delYn: "N", ...req.query },
@@ -64,13 +65,13 @@ export default [
           , reguser.userName as regUserName
           , moduser.userName as modUserName
           , parentmenu.menuName as parentName
-          , (select userGroupName from tb_user_group where id = menu.userGroupId) userGroupName
-        FROM tb_menu menu
-        LEFT OUTER JOIN tb_menu parentmenu
+          , (select userGroupName from ${schema}.tb_user_group where id = menu.userGroupId) userGroupName
+        FROM ${schema}.tb_menu menu
+        LEFT OUTER JOIN ${schema}.tb_menu parentmenu
           ON parentmenu.id = menu.parentId
-        LEFT OUTER JOIN tb_user reguser
+        LEFT OUTER JOIN ${schema}.tb_user reguser
           ON reguser.id = menu.regUserId
-        LEFT OUTER JOIN tb_user moduser
+        LEFT OUTER JOIN ${schema}.tb_user moduser
           ON moduser.id = menu.modUserId
         WHERE 1=1
 
@@ -150,12 +151,12 @@ export default [
             , reguser.userName as regUserName
             , moduser.userName as modUserName
             , parentmenu.menuName as parentName
-          FROM tb_menu menu
-          LEFT OUTER JOIN tb_menu parentmenu
+          FROM ${schema}.tb_menu menu
+          LEFT OUTER JOIN ${schema}.tb_menu parentmenu
             ON parentmenu.id = menu.parentId
-          LEFT OUTER JOIN tb_user reguser
+          LEFT OUTER JOIN ${schema}.tb_user reguser
             ON reguser.id = menu.regUserId
-          LEFT OUTER JOIN tb_user moduser
+          LEFT OUTER JOIN ${schema}.tb_user moduser
             ON moduser.id = menu.modUserId
           WHERE menu.id = :id
           `,

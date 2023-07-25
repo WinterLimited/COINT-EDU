@@ -5,12 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f143e45-01c4-4517-9919-9bd600ab4ac1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/system/account/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/system/account/AuthController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/resources/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/resources/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/08.system/00_ColumBuilder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/08.system/00_ColumBuilder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/08.system/04_Menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/08.system/04_Menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/99.Test/01_GRID.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/99.Test/01_GRID.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/99.Test/02_Columns.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/99.Test/02_Columns.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/system/menu/MenuController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/system/menu/MenuController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/system/menu/UserMenuController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/system/menu/UserMenuController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/system/user/MyinfoController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/system/user/MyinfoController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/system/user/UserController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/system/user/UserController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/system/user/userNameCommon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/system/user/userNameCommon.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/Controllers/system/userGroup/UserGroupController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/Controllers/system/userGroup/UserGroupController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/models/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/models/tb_grids.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/models/tb_grids.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/models/tb_gridsColumn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/models/tb_gridsColumn.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/models/tb_menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/models/tb_menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/models/tb_user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/models/tb_user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/models/tb_user_group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/models/tb_user_group.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/coint/models/tb_valueType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/coint/models/tb_valueType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manufacturing-backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/manufacturing-backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manufacturing-dashboard/src/components/SampleTable/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/manufacturing-dashboard/src/components/SampleTable/data.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +78,7 @@
       <updated>1689842785802</updated>
       <workItem from="1689842787187" duration="33266000" />
       <workItem from="1690176022805" duration="3430000" />
-      <workItem from="1690189695835" duration="1983000" />
+      <workItem from="1690189695835" duration="15120000" />
     </task>
     <servers />
   </component>

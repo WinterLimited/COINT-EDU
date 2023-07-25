@@ -1,12 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import models from "../../models";
 import { RestResponse } from "../../common/RestResponse";
-import { HTTP400Error } from "../../common/errors";
-import { QueryTypes } from "sequelize";
-import bcryptjs from "bcryptjs";
-import validator from "validator";
-import assert from "assert";
-import moment from "moment";
 
 export default [
   {

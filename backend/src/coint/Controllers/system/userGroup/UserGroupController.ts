@@ -1,17 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 import models from "../../../models";
 import { RestResponse } from "../../../common/RestResponse";
-import { HTTP400Error } from "../../../common/errors";
 import { QueryTypes } from "sequelize";
-import bcryptjs from "bcryptjs";
-import validator from "validator";
-import assert from "assert";
-import multer from "multer";
-import path from "path";
-import fs, { ReadStream } from "fs";
-import { commonHandlers } from "../../../common/middleware";
-import cors from "cors";
-import { RequestError } from "request-promise/errors";
+const schema = process.env.COINT_SCHEMA
 
 export default [
   {
@@ -22,7 +13,7 @@ export default [
       async (req: Request, res: Response) => {
         const data: [] = await models.sequelize.query(
           `
-        select id as code,userGroupName as name  from tb_user_group where delYn = 'N' order by id asc
+        select id as code,userGroupName as name  from ${schema}.tb_user_group where delYn = 'N' order by id asc
         `,
           { type: QueryTypes.SELECT, replacements: { ...req.query } }
         );

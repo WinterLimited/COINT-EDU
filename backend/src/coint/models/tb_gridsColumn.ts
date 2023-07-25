@@ -27,7 +27,7 @@ export default function (sequelize: Sequelize, dataTypes: any) {
         allowNull: true,
       },
       valueType: {
-        field: "valueType",
+        field: "valuetype",
         type: DataTypes.BIGINT,
         allowNull: true,
       },

@@ -22,7 +22,7 @@ export default function (sequelize: Sequelize, dataTypes: any) {
         },
         menuOrder: { field: "menuOrder", type: DataTypes.INTEGER, allowNull: true },
         regUserId: { field: "regUserId", type: DataTypes.BIGINT, allowNull: true },
-        userGroupId: { field: "userGroupId", type: DataTypes.INTEGER, allowNull: true },
+        userGroupId: { field: "userGroupId", type: DataTypes.BIGINT, allowNull: true },
         regDtm: { field: "regDtm", type: DataTypes.DATE, allowNull: true },
         modUserId: { field: "modUserId", type: DataTypes.BIGINT, allowNull: true },
         modDtm: { field: "modDtm", type: DataTypes.DATE, allowNull: true },
@@ -35,4 +35,3 @@ export default function (sequelize: Sequelize, dataTypes: any) {
     });
     return entity;
 }
-

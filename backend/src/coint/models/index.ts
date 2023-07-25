@@ -22,16 +22,22 @@ if (config.dialectOptions && config.dialectOptions.ssl) {
 }
 
 let sequelize: Sequelize;
-sequelize = new Sequelize(config.database, config.username, config.password, config);
+sequelize = new Sequelize(config.database, config.username, config.password, {
+  ...config,
+  define: {
+    schema: "dbo"  // schema 정의
+  }
+});
 fs
-  .readdirSync(__dirname)
-  .filter((file: any) => {
-    return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
-  })
-  .forEach((file: any) => {
-    const model = sequelize.import(path.join(__dirname, file));
-    db[model.name] = model;
-  });
+    .readdirSync(__dirname)
+    .filter((file: any) => {
+      return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
+    })
+    .forEach((file: any) => {
+      const model = sequelize.import(path.join(__dirname, file));
+      db[model.name] = model;
+    });
+
 
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {

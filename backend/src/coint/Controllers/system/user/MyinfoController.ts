@@ -1,10 +1,6 @@
 import { Request, Response } from "express";
 import models from "../../../models";
 import { RestResponse } from "../../../common/RestResponse";
-import { HTTP400Error } from "../../../common/errors";
-import bcryptjs from 'bcryptjs'
-import passportjwt from 'passport-jwt'
-import jwt from 'jsonwebtoken';
 import { getSession } from '../account'
 import { QueryTypes } from "sequelize";
 

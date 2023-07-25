@@ -3,6 +3,7 @@ import models from "../../../models";
 import { RestResponse } from "../../../common/RestResponse";
 import { HTTP400Error } from "../../../common/errors";
 import { QueryTypes } from "sequelize";
+const schema = process.env.COINT_SCHEMA
 
 export default [
   {
@@ -20,9 +21,9 @@ export default [
             menuSname as sname,
             menuPath as path,
             menuIcon as icon
-          from tb_menu
+          from ${schema}.tb_menu
           where delYn = 'N'
-          and userGroupId >= (select userGroupId from tb_user where id = :userId)
+          and userGroupId >= (select userGroupId from ${schema}.tb_user where id = :userId)
           order by menuOrder
           `, {
           replacements: { ...req.query, userId: curruser.id },

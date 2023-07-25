@@ -18,7 +18,8 @@ type Route = {
 
 const applyRoutes = (routes: Route[], router: Router) => {
   for (const route of routes) {
-    const auth: boolean = route.auth === undefined ? true : route.auth;
+    const auth: boolean = false;
+    // const auth: boolean = route.auth === undefined ? true : route.auth;
     const method: string = route.method;
     const path: string = route.path;
     const handler: any = route.handler;
